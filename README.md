@@ -27,7 +27,7 @@ With Spark streaming stock data could be fast processed before sending to Kafka.
 Docker-machine, Docker
 
 ### Easy way to install dependencies
-'''sh
+```sh
 pip install -r requirements.txt
 ```
 
