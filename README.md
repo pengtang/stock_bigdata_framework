@@ -26,13 +26,13 @@ With Spark streaming stock data could be fast processed before sending to Kafka.
 ## Project Dependency
 Common dependency: Docker-machine, Docker
 
-Dependency for kafka_data_ingestion.py 
+Dependency for kafka_data_ingestion.py: 
 googlefinance, kafka-python, schedule
 
-Dependency for kafka_to_cassandra.py
+Dependency for kafka_to_cassandra.py:
 cassandra-driver
 
-Dependency for spark_stream.py
+Dependency for spark_stream.py:
 pyspark, kafka-python
 
 ### Easy way to install dependencies
