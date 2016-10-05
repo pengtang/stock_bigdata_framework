@@ -24,7 +24,7 @@ With Spark streaming stock data could be fast processed before sending to Kafka.
 ```
 
 ## Project Dependency
-Common dependency: Docker-machine, Docker
+Common dependency: Docker-machine, Docker, Zookeeper
 
 Dependency for kafka_data_ingestion.py: 
 googlefinance, kafka-python, schedule
