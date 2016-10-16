@@ -1,5 +1,6 @@
-# Spark streaming application - 
-# write back to kafka, kafka broker, new kafka topic
+# Spark streaming application - Get data from Kafka, process the data and then sends back the new result to Kafka
+# Run example: ./spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.0.0.jar spark_stream.py stock-analyzer average-stock-price 192.168.99.100:9092 
+# @param $1 - "source kafka topic", "write to kafka topic", $3 - "kafka broker address"
 
 import atexit
 import sys
@@ -55,7 +56,7 @@ def process(timeobj, rdd):
 
 if __name__ == '__main__':
 	if len(sys.argv) != 4:
-		print ('Usage: stream-processing [topic] [new_topic] [kafka-broker]')
+		print ('Usage: spark_stream [topic] [new_topic] [kafka-broker]')
 		exit(1)
 
 	topic, new_topic, kafka_broker = sys.argv[1:]
