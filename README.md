@@ -33,7 +33,7 @@ Dependency for kafka_to_cassandra.py:
 cassandra-driver
 
 Dependency for spark_stream.py:
-pyspark, kafka-python
+spark-submit(spark binary directory), pyspark, kafka-python, spark-streaming jar 
 
 ### Easy way to install dependencies
 ```sh
