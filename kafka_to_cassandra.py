@@ -9,7 +9,7 @@ import logging
 import json
 
 
-topic_name = 'stock-analyzer'
+topic_name = 'stock_analyzer'
 kafka_broker = '127.0.0.1:9002'
 logger_format = '%(asctime)-15s %(message)s'
 logging.basicConfig(format = logger_format)
